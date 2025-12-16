@@ -27,27 +27,32 @@ O objetivo foi criar um sistema que automatiza a comunicação com clientes:
 3.  **Load:** Atualiza os dados do usuário na API com a nova mensagem gerada.
 
 #### **Fluxo de Funcionamento**
+
 ```mermaid
 graph LR
     A[Planilha CSV] -->|Leitura de IDs| B(Pipeline ETL)
-    B -->|GET /users| C[API Santander (FastAPI)]
+    B -->|GET /users| C[API Santander &#40;FastAPI&#41;]
     C -->|Dados do Usuário| B
     B -->|Prompt + Nome| D[Google Gemini AI]
     D -->|Mensagem Personalizada| B
     B -->|PUT /users| C
-    ```
-    ⚙️ Tecnologias Utilizadas
-Python 3.12: Linguagem principal.
+```
 
-FastAPI: Framework para construção da API REST (Backend).
 
-Pandas: Manipulação de dados (leitura de CSV).
+----
+### ⚙️ Tecnologias Utilizadas
 
-Google Generative AI: Integração com o modelo Gemini 2.0 Flash.
+- Python 3.12: Linguagem principal.
 
-Requests: Consumo de APIs HTTP.
+- FastAPI: Framework para construção da API REST (Backend).
 
-📁 Estrutura do Projeto
+- Pandas: Manipulação de dados (leitura de CSV).
+
+- Google Generative AI: Integração com o modelo Gemini 2.0 Flash.
+
+- Requests: Consumo de APIs HTTP.
+
+### 📁 Estrutura do Projeto
 
 ```
 projeto-santander-ai/
@@ -63,7 +68,11 @@ projeto-santander-ai/
 ├── .env                    # Variáveis de Ambiente (Chaves)
 └── requirements.txt        # Dependências
 ```
-🚀 Como Executar
+
+
+----
+### 🚀 Como Executar
+
 1. Configuração Inicial
 Clone o repositório e instale as dependências:
 
@@ -100,19 +109,12 @@ Em outro terminal, execute o script de automação:
 ```
 python -m etl.src.pipeline
 ```
+> [!NOTE]
+> O script aguardará 60 segundos entre cada requisição para respeitar a cota gratuita da IA.
 
-O script aguardará 60 segundos entre cada requisição para respeitar a cota gratuita da IA.
+----
 
-👥 Autor
-<a href="https://github.com/amaro-netto"> <img style="border-radius: 50%;" src="https://www.google.com/search?q=https://avatars.githubusercontent.com/u/60453368%3Fv%3D4" width="100px;" alt=""/> <br /> <sub><b>Amaro Netto</b></sub> </a>
+#### 👥 Autor
+<a href="https://github.com/amaro-netto" title="Amaro Netto"><img width="180" src="https://github.com/user-attachments/assets/19f46efc-57ff-4a4b-ac19-11da9e2d59c9"/></a>
 
 Feito com ❤️ e Python.
-
-
----
-
-### ✅ Próximo Passo
-
-Agora que tudo funciona e a documentação está pronta, **você gostaria que eu gerasse os comandos Git para subir esse projeto para o seu GitHub?**
-
-Assim garantimos que esse trabalho fique salvo no seu portfólio.
