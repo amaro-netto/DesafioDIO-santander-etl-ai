@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Dev Hiago",
+    "account": {
+      "number": "00001-1",
+      "agency": "2030"
+    },
+    "news": [
+      {
+        "icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/credit.svg",
+        "description": "Hiago, invista hoje no seu futuro! Pequenos passos agora geram grandes conquistas amanhã. 😉"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Dev Julia",
+    "account": {
+      "number": "00002-2",
+      "agency": "2030"
+    },
+    "news": [
+      {
+        "icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/credit.svg",
+        "description": "Julia, plante hoje a semente da sua segurança financeira. Invista agora e colha um futuro tranquilo!"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Dev Python",
+    "account": {
+      "number": "00003-3",
+      "agency": "2030"
+    },
+    "news": [
+      {
+        "icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/credit.svg",
+        "description": "Invista em seu futuro, Dev! Python hoje, liberdade financeira amanhã. 😉"
+      }
+    ]
+  }
+]
